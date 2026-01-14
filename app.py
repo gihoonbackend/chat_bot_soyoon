@@ -514,13 +514,15 @@ if st.session_state.messages:
                     if reference:
                         with st.expander("🔍 참고 자료 및 발달적 근거 보기"):
                             st.markdown(reference)
-
+    
                             if "relevant_docs" in message and message["relevant_docs"]:
                                 st.markdown("---")
                                 st.markdown("### 📚 검색된 유사 문서")
                                 for j, doc in enumerate(message["relevant_docs"]):
-                                    with st.expander(f"문서 {j + 1}: {doc['filename']}"):
+                                    st.markdown(f"**📄 문서 {j + 1}: {doc['filename']}**")
+                                    with st.container():
                                         st.text(doc["content"][:500] + "...")
+                                    st.markdown("---")
                 else:
                     st.markdown(content)
 
