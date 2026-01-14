@@ -238,7 +238,7 @@ with st.sidebar:
         st.rerun()
 
 # 메인 영역
-st.title("🎓 유아발달상황 종합평가 작성 도우미")
+st.title("🎓 doorong 전용 유아발달상황 종합평가 작성 도우미")
 st.markdown("---")
 
 # API 키 확인
