@@ -400,7 +400,7 @@ with st.form("child_info_form"):
     col1, col2 = st.columns(2)
 
     with col1:
-        child_name = st.text_input("아이 이름", placeholder="예: 고도율")
+        child_name = st.text_input("아이 이름", placeholder="예: 송기훈")
         child_age = st.selectbox("나이", ["만 3세", "만 4세", "만 5세", "만 6세", "만 7세"])
 
     with col2:
@@ -409,7 +409,7 @@ with st.form("child_info_form"):
     observations = st.text_area(
         "관찰 내용",
         placeholder=(
-            "예: 하츄핑을 그리고 잘라서 그걸로 친구와 역할놀이함. "
+            "예: 참신하고, 창의로운 이야기들을 주로함. "
             "경험한 일에 대해 기억하고 교사나 친구들에게 이야기함. "
             "도전하는 음식이 많고 골고루 먹으며 남기지 않고 먹는 모습이 많아짐."
         ),
