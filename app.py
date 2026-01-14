@@ -7,7 +7,7 @@ from typing import List, Dict
 
 # 페이지 설정
 st.set_page_config(
-    page_title="유아발달상황 평가 작성 도우미",
+    page_title="doorong 전용 유아발달상황 평가 작성 도우미",
     page_icon="🎓",
     layout="wide"
 )
